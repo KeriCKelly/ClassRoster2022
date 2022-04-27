@@ -1,6 +1,6 @@
 @import url('telma.css');
 :root {
-    --darkcolor: #04080F;
+    --darkcolor: #182438;
     --maincolor: #FB9F89;
     --secondcolor: #C6D8D3;
 }
@@ -26,19 +26,19 @@ img {
 
 figcaption {
     font-family: 'Telma-Regular';
-    font-size: 30px;
+    font-size: 3vmin;
     color: var(--darkcolor);
     padding-top: 8vmin;
-    padding-bottom: 4vmin;
+    padding-bottom: 3vmin;
 }
 
 figure {
-    width: 50vmin;
-    height: 50vmin;
-    max-width: 300px;
+    width: 30vmin;
+    height: 40vmin;
+    padding: 10px;
     box-shadow: 0px 0px 30px;
+    border-top: 1em solid var(--darkcolor);
     border-radius: 0rem 0rem 0rem 2rem;
-    padding: 3vmin;
-    margin: 8vmin;
     background: var(--maincolor);
+    overflow: hidden;
 }

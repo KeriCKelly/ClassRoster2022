@@ -11,6 +11,7 @@ fetch(url)
     // check-check: get one image
     // Note: Webflow returns data in array called `items`
     console.log(data.items[0].image.url);
+    console.log(data.items[0].name);
 
     // get container for data
     const gallery = document.querySelector(".gallery");
@@ -21,7 +22,7 @@ fetch(url)
       // template
       const template = `
           <figure>
-            <figcaption>Student</figcaption>
+            <figcaption>${student.name}</figcaption>
             <img src="${student.image.url}" alt="Placeholder" />
           </figure>
        `;
@@ -29,4 +30,11 @@ fetch(url)
       // insert EACH `student` record into container
       gallery.insertAdjacentHTML("afterbegin", template);
     });
+
+
+
+    function newFunction() {
+      console.log(data.image);
+      console.log(data.name);
+    }
   });
